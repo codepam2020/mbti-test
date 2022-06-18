@@ -1,6 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import Home from "./home/home";
+import Test1 from "./test/test1";
+import { ThemeProvider } from "styled-components";
+import { theme } from "../data/theme";
+import { useSelector } from "react-redux";
 
 const View = styled.div`
   display: flex;
@@ -10,9 +14,27 @@ const View = styled.div`
 `;
 
 export default function Main() {
-  return (
-    <View>
-      <Home />
-    </View>
-  );
+  const { page_num } = useSelector((state) => {
+    return { page_num: state.page_num.page_num };
+  });
+
+  console.log(page_num);
+
+  if (page_num === 1) {
+    return (
+      <ThemeProvider theme={theme}>
+        <View>
+          <Test1 />
+        </View>
+      </ThemeProvider>
+    );
+  } else {
+    return (
+      <ThemeProvider theme={theme}>
+        <View>
+          <Home />
+        </View>
+      </ThemeProvider>
+    );
+  }
 }

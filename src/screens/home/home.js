@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import HomeHeader from "./components/home_header";
+import Header from "../components/header";
 import HomeBody from "./components/home_body";
 
 const View = styled.div`
@@ -14,7 +14,7 @@ const View = styled.div`
 export default function Home() {
   return (
     <View>
-      <HomeHeader />
+      <Header />
       <HomeBody />
     </View>
   );
