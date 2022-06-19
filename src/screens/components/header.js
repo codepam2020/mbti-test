@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { useDispatch } from "react-redux";
 import { PageNumAction } from "../../reducers/page_num_action";
+import { TestResultResetAction } from "../../reducers/test_result_action";
 
 const View = styled.div`
   display: flex;
@@ -27,7 +28,8 @@ export default function Header() {
       <Title
         href="#"
         onClick={() => {
-          dispatch(PageNumAction(1));
+          dispatch(PageNumAction(0));
+          dispatch(TestResultResetAction());
         }}
       >
         도라에몽 성격 테스트
