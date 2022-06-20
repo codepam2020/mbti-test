@@ -11,6 +11,16 @@ const View = styled.div`
   width: 100%;
 `;
 
+const ResultText = styled.div`
+  display: felx;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-top: 100px;
+`;
+
 export default function Result() {
   const { test_result } = useSelector((state) => {
     return { test_result: state.test_result };
@@ -18,7 +28,7 @@ export default function Result() {
   return (
     <View>
       <Header />
-      <p>{test_result}</p>
+      <ResultText>{test_result}</ResultText>
     </View>
   );
 }
