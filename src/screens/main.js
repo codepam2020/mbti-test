@@ -15,6 +15,7 @@ const View = styled.div`
 `;
 
 export default function Main() {
+  // 페이지 번호와 테스트 결과 redux-state에서 가져옴
   const { page_num, test_result } = useSelector((state) => {
     return {
       page_num: state.page_num.page_num,
@@ -22,8 +23,7 @@ export default function Main() {
     };
   });
 
-  console.log(`test result: ${test_result}`);
-
+  // page number == 0 일때 home page 보여줌
   if (page_num === 0) {
     return (
       <ThemeProvider theme={theme}>
@@ -33,7 +33,8 @@ export default function Main() {
       </ThemeProvider>
     );
   }
-  if (page_num === 11) {
+  // page number == 14 일때 result page 보여줌
+  if (page_num === 14) {
     return (
       <ThemeProvider theme={theme}>
         <View>
@@ -41,7 +42,9 @@ export default function Main() {
         </View>
       </ThemeProvider>
     );
-  } else {
+  }
+  // page number == 1 ~ 13 일때 test page 보여줌
+  else {
     return (
       <ThemeProvider theme={theme}>
         <View>

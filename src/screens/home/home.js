@@ -12,6 +12,8 @@ const View = styled.div`
 `;
 
 export default function Home() {
+  // Header와 Body를 받아옴
+  // main 에 서 관리
   return (
     <View>
       <Header />
