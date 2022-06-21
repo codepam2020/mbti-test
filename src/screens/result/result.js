@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import Header from "../components/header";
 import { useSelector } from "react-redux";
 import {
@@ -48,6 +48,24 @@ const ResultText = styled.div`
   font-size: ${({ theme }) => theme.size.result_text}px;
 `;
 
+const color_change = keyframes`
+  0%   {color: red;}
+  14.286%  {color: orange;}
+  28.571%  {color: yellow;}
+  42.857% {color: green;}
+  57.143% {color: blue;}
+  71.429% {color: navy;}
+  85.714% {color: purple;}
+  100% {color: red;}
+`;
+
+const Name = styled.div`
+  font-size: 18px;
+  align-self: end;
+  margin-right: 5vw;
+  animation: ${color_change} infinite linear 8s;
+`;
+
 export default function Result() {
   // test result 결과들을 redux-state 에서 받아옴
   const { test_result } = useSelector((state) => {
@@ -65,6 +83,7 @@ export default function Result() {
         <CharacterImage src={setCharacterSrc(myCharacter)} />
       </CharacterImageContainer>
       <ResultTextTitle>{myCharacter}</ResultTextTitle>
+      <Name>made by codePam</Name>
     </View>
   );
 }
