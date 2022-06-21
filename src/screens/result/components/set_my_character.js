@@ -6,10 +6,10 @@ function setMBTI(result) {
   const result2 = result[1] ? 0 : 1;
   const result3 = result[2] ? 1 : 0;
   const result4 = result[3] ? 0 : 1;
-  const result5 = result[4] ? 1 : 0;
-  const result6 = result[5] ? 1 : 0;
+  // const result5 = result[4] ? 1 : 0;
+  // const result6 = result[5] ? 1 : 0;
   const result7 = result[6] ? 0 : 1;
-  const result8 = result[7] ? 1 : 0;
+  // const result8 = result[7] ? 1 : 0;
   const result9 = result[8] ? 1 : 0;
   const result10 = result[9] ? 0 : 1;
   const result11 = result[10] ? 1 : 0;
@@ -30,7 +30,7 @@ function setCharacter(result) {
   const result2 = result[1] ? 0 : 1;
   const result3 = result[2] ? 1 : 0;
   const result4 = result[3] ? 0 : 1;
-  const result5 = result[4] ? 1 : 0;
+  // const result5 = result[4] ? 1 : 0;
   const result6 = result[5] ? 1 : 0;
   const result7 = result[6] ? 0 : 1;
   const result8 = result[7] ? 1 : 0;

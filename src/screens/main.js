@@ -16,10 +16,9 @@ const View = styled.div`
 
 export default function Main() {
   // 페이지 번호와 테스트 결과 redux-state에서 가져옴
-  const { page_num, test_result } = useSelector((state) => {
+  const { page_num } = useSelector((state) => {
     return {
       page_num: state.page_num.page_num,
-      test_result: state.test_result,
     };
   });
 
