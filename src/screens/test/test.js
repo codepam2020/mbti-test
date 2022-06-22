@@ -123,7 +123,7 @@ export default function Test() {
   return (
     <View>
       <Header />
-      <TestProgress value={((page_num - 1) / 13) * 100} />
+      <TestProgress value={((page_num - 1) / 14) * 100} />
       <QuestionContainer>
         <Question>{question[page_num - 1]}</Question>
       </QuestionContainer>
