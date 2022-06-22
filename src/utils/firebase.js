@@ -19,11 +19,11 @@ const db = getFirestore(app);
 export const saveLogInfo = async (log_data) => {
   const time = getTimeNow();
   await setDoc(doc(db, "log_data", time), {
-    time: time,
-    time_full: new Date(),
+    deviceInfo: window.navigator.userAgent,
     test_result: log_data.test_result,
     myMBTI: log_data.myMBTI,
     myCharacter: log_data.myCharacter,
-    deviceInfo: window.navigator.userAgent,
+    time_full: new Date(),
+    time: time,
   });
 };
