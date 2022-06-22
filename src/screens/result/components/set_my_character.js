@@ -15,8 +15,9 @@ function setMBTI(result) {
   const result11 = result[10] ? 1 : 0;
   const result12 = result[11] ? 1 : 0;
   const result13 = result[12] ? 1 : 0;
+  const result14 = result[13] ? 1 : 0;
 
-  const IorE = result1 + result4 + result11 >= 2 ? "I" : "E";
+  const IorE = result1 + result4 + result11 + result14 >= 2 ? "I" : "E";
   const SorN = result7 + result9 + result13 >= 2 ? "S" : "N";
   const TorF = result2 + result12 >= 1 ? "T" : "F";
   const PorJ = result3 + result10 >= 2 ? "P" : "J";
@@ -39,8 +40,9 @@ function setCharacter(result) {
   const result11 = result[10] ? 1 : 0;
   const result12 = result[11] ? 1 : 0;
   const result13 = result[12] ? 1 : 0;
+  const result14 = result[13] ? 1 : 0;
 
-  const IorE = result1 + result4 + result11 >= 2 ? "I" : "E";
+  const IorE = result1 + result4 + result11 + result14 >= 2 ? "I" : "E";
   const SorN = result7 + result9 + result13 >= 2 ? "S" : "N";
   const TorF = result2 + result12 >= 1 ? "T" : "F";
   const PorJ = result3 + result10 >= 2 ? "P" : "J";

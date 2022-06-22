@@ -32,8 +32,8 @@ export default function Main() {
       </ThemeProvider>
     );
   }
-  // page number == 14 일때 result page 보여줌
-  if (page_num === 14) {
+  // page number == 15 일때 result page 보여줌
+  if (page_num === 15) {
     return (
       <ThemeProvider theme={theme}>
         <View>
@@ -42,7 +42,7 @@ export default function Main() {
       </ThemeProvider>
     );
   }
-  // page number == 1 ~ 13 일때 test page 보여줌
+  // page number == 1 ~ 14 일때 test page 보여줌
   else {
     return (
       <ThemeProvider theme={theme}>

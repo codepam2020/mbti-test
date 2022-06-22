@@ -63,6 +63,7 @@ export default function Test() {
     "Q11) 친구와 밥을 먹은 후 내가 결제했다",
     "Q12) 애인이 우울해서 머리를 잘랐다고 연락왔다",
     "Q13) 인터넷에 찾아 요리를 하고있다.",
+    "Q14) 주말에 친구가 갑자기 놀자고 부른다",
   ];
 
   // button1 list
@@ -80,6 +81,7 @@ export default function Test() {
     "카카오 정산하기할게~",
     "사진 보내봐",
     "레시피에 나온대로 정확히 맞춘다",
+    "귀찮으니 다음에...",
   ];
 
   // button2 list
@@ -97,6 +99,7 @@ export default function Test() {
     "다음엔 너가 사~",
     "무슨 일 있어?",
     "내 감을 믿고 넣는다",
+    "바로 나간다",
   ];
 
   // when button1 clicked, action

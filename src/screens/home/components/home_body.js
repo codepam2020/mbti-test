@@ -24,6 +24,7 @@ const TextContainer = styled.div`
 const Text = styled.div`
   display: flex;
   font-size: ${({ theme }) => theme.size.normal_text}px;
+  margin: 2px;
 `;
 
 const ImageContainer = styled.div`
@@ -44,8 +45,9 @@ export default function HomeBody() {
   return (
     <View>
       <TextContainer>
-        <Text>테스트는 약 5분 정도 소요됩니다.</Text>
-        <Text>정직하게 답변해주세요.</Text>
+        <Text>테스트는 약 3분 정도 소요됩니다.</Text>
+        <Text>문항수는 총 14문제입니다.</Text>
+        <Text>다소 부정확 할 수 있습니다.</Text>
       </TextContainer>
       <ImageContainer>
         <Image src="https://firebasestorage.googleapis.com/v0/b/doraemon-mbti-test.appspot.com/o/doraemon.png?alt=media&token=987bbfd5-4ab1-4dbb-baf7-d5509a86f1af" />
