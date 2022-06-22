@@ -1,12 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled, { keyframes } from "styled-components";
 import Header from "../components/header";
 import { useSelector } from "react-redux";
 import {
-  // setMBTI,
+  setMBTI,
   setCharacter,
   setCharacterSrc,
 } from "./components/set_my_character";
+import { saveLogInfo } from "../../utils/firebase";
 
 const View = styled.div`
   display: flex;
@@ -75,6 +76,17 @@ export default function Result() {
   // set_my_character.js 에서 import한 function
   const myCharacter = setCharacter(test_result);
   // const myMBTI = setMBTI(test_result);
+  const myMBTI = setMBTI(test_result);
+
+  const log_data = {
+    test_result: test_result,
+    myMBTI: myMBTI,
+    myCharacter: myCharacter,
+  };
+
+  useEffect(() => {
+    saveLogInfo(log_data);
+  });
 
   return (
     <View>

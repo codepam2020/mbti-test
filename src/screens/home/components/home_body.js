@@ -40,6 +40,7 @@ const Image = styled.img`
 
 export default function HomeBody() {
   const dispatch = useDispatch();
+
   return (
     <View>
       <TextContainer>
