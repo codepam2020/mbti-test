@@ -78,6 +78,7 @@ export default function Result() {
   // const myMBTI = setMBTI(test_result);
   const myMBTI = setMBTI(test_result);
 
+  // log data
   const log_data = {
     test_result: test_result,
     myMBTI: myMBTI,
