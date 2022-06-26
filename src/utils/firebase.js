@@ -1,6 +1,6 @@
 import { initializeApp } from "firebase/app";
 import { doc, getFirestore, setDoc } from "firebase/firestore";
-import { getAnalytics } from "firebase/analytics";
+// import { getAnalytics } from "firebase/analytics";
 import getTimeNow from "./get_time_now";
 
 const firebaseConfig = {
@@ -29,4 +29,4 @@ export const saveLogInfo = async (log_data) => {
   });
 };
 
-const analytics = getAnalytics(app);
+// const analytics = getAnalytics(app);
