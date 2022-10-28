@@ -39,6 +39,8 @@ const Image = styled.img`
   width: 96%;
 `;
 
+
+
 export default function HomeBody() {
   const dispatch = useDispatch();
 
